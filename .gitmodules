@@ -1,0 +1,3 @@
+[submodule "deps/Vegvisir-Core"]
+	path = deps/Vegvisir-Core
+	url = git@github.com:Vegvisir-IoT/Vegvisir-Core.git

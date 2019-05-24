@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.vegvisir.application.VirtualVegvisirInstance;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -48,5 +50,14 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+
+    /**
+     * Loading virtual instance for testing.
+     * @return a singleton of virtual instance.
+     */
+    private VirtualVegvisirInstance loadVirtualVegvisirInstance() {
+        return VirtualVegvisirInstance.getInstance();
     }
 }
